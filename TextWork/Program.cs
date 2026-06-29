@@ -9,7 +9,7 @@ Console.WriteLine("Hello, World!");
  *
  * Team:
  * Bereka Dmytro dmitriy.bereka@gmail.com
- * ..
+ * Kovalevskiy Dmytro kovalevskijdmitro29@gmail.com
  * ..
  * ..
  * ..
