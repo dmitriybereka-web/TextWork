@@ -7,6 +7,11 @@ Console.WriteLine("Hello, World!");
  *
  * Teacher: Vasyl Kovalov raid3r81@gmail.com
  *
- * Team: 
- *  
+ * Team:
+ * Bereka Dmytro dmitriy.bereka@gmail.com
+ * Kovalevskiy Dmytro kovalevskijdmitro29@gmail.com
+ * ..
+ * ..
+ * ..
  */
+ 
