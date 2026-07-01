@@ -1,5 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36811.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -19,6 +21,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostUsedWordsPlugin", "MostUsedWordsPlugin\MostUsedWordsPlugin.csproj", "{535A253F-CBE2-472D-8737-22FED8908CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LongestWord", "TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj", "{382E33B4-52C9-4280-952D-5B740AC87AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UniqueWords", "TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj", "{A089CE61-818B-49FB-BB0F-B6A5CB53E329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +60,14 @@ Global
 		{535A253F-CBE2-472D-8737-22FED8908CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{535A253F-CBE2-472D-8737-22FED8908CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{535A253F-CBE2-472D-8737-22FED8908CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

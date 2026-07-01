@@ -82,6 +82,9 @@ var textForAnalysis = """
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
     new SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
+    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
+    new TextWork.Plugins.LongestWord.LongestWordPlugin(),
+    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin()
     new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin()
     new MostUsedWordsPlugin.MostUsedWordsPlugin()
  };
