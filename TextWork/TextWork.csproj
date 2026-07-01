@@ -14,7 +14,9 @@
     <ProjectReference Include="..\TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,4 @@
 ﻿using TextWork.Core;
-using TextWork.Plugins.SymbolCount;
 
 /*
  *
@@ -80,9 +79,11 @@ var textForAnalysis = """
  var analyzePlugins = new List<IAnalyzePlugin>
  {
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
-    new SymbolCountPlugin(),
+    new TextWork.Plugins.SymbolCount.SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
+    new TextWork.Plugins.ShortestWord.ShortestWordPlugin(),
     new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
+    new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
