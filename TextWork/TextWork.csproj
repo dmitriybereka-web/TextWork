@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TextWork.Core\TextWork.Core.csproj" />
+    <ProjectReference Include="..\TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj" />
   </ItemGroup>

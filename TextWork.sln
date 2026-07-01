@@ -1,5 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
 # Visual Studio Version 18
 VisualStudioVersion = 18.5.11716.220 stable
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -8,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Core", "TextWork.Core\TextWork.Core.csproj", "{211F587D-D982-4E36-87A3-3C8D83CF37F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SymbolCount", "TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj", "{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{211F587D-D982-4E36-87A3-3C8D83CF37F6} = {211F587D-D982-4E36-87A3-3C8D83CF37F6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
 EndProject
@@ -29,6 +36,10 @@ Global
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
