@@ -82,7 +82,8 @@ var textForAnalysis = """
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
     new SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
-    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin()
+    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
+    new TextWork.Plugins.LongestWord.LongestWordPlugin()
  };
 
 foreach (var plugin in analyzePlugins)

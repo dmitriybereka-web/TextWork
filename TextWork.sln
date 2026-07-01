@@ -1,10 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24
-VisualStudioVersion = 17.14.36310.24
 # Visual Studio Version 18
-VisualStudioVersion = 18.5.11716.220 stable
+VisualStudioVersion = 18.5.11716.220
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork", "TextWork\TextWork.csproj", "{6E7DA4AC-4D67-4E19-A07C-A9D8D78B2924}"
 EndProject
@@ -20,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SymbolCoun
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LongestWord", "TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj", "{382E33B4-52C9-4280-952D-5B740AC87AC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +50,10 @@ Global
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
