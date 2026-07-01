@@ -11,6 +11,7 @@ Console.WriteLine("Hello, World!");
  * Bereka Dmytro dmitriy.bereka@gmail.com
  * Kovalevskiy Dmytro kovalevskijdmitro29@gmail.com
  * Rui Dariia dasharuy2007@gmail.com
+ * Hryn Tetiana tana2501201010@gmail.com
  * ..
  * ..
  */
