@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TextWork.Core\TextWork.Core.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj" />
   </ItemGroup>
 
 </Project>

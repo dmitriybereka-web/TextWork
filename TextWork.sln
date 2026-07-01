@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork", "TextWork\TextWo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Core", "TextWork.Core\TextWork.Core.csproj", "{211F587D-D982-4E36-87A3-3C8D83CF37F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{211F587D-D982-4E36-87A3-3C8D83CF37F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{211F587D-D982-4E36-87A3-3C8D83CF37F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{211F587D-D982-4E36-87A3-3C8D83CF37F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
