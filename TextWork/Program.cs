@@ -90,6 +90,8 @@ var textForAnalysis = """
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin()
  };
 
+Console.WriteLine("Analyzing text:");
+
 foreach (var plugin in analyzePlugins)
 {
     plugin.Analyze(textForAnalysis);
@@ -104,5 +106,22 @@ foreach (var plugin in analyzePlugins)
     Console.WriteLine(new string('-', 50));
 }
 
+Console.WriteLine("Editing text:");
 
- 
+var textForEdit = """
+
+                  """;
+
+var editorPlugins = new List<IEditorPlugin>
+{
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter")
+};
+
+foreach (var plugin in editorPlugins)
+{
+    plugin.Edit(textForEdit);
+    Console.WriteLine($"Plugin: {plugin.Name}");
+    Console.WriteLine($"Description: {plugin.Description}");
+    Console.WriteLine($"Results:\n{plugin.GetResults()}");
+    Console.WriteLine(new string('-', 50));
+} 
