@@ -78,7 +78,8 @@ var textForAnalysis = """
  
  var analyzePlugins = new List<IAnalyzePlugin>
  {
-    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin()
+    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin()
  };
 
 foreach (var plugin in analyzePlugins)
