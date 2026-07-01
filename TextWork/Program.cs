@@ -79,9 +79,8 @@ var textForAnalysis = """
  
  var analyzePlugins = new List<IAnalyzePlugin>
  {
-    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
-    new SymbolCountPlugin()
-    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    new SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin()
  };
 
