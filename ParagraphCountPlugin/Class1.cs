@@ -1,22 +1,34 @@
-﻿using System;
-using TextWork.Core;
+﻿using TextWork.Core;
 
-namespace ParagraphCountPlugin
+namespace ParagraphCountPlugin;
+
+public class ParagraphCountPlugin : IAnalyzePlugin
 {
-    public class ParagraphCountPlugin : IAnalyzePlugin
+    private readonly List<string> _results = new();
+
+    public string Name => "Paragraph Counter";
+
+    public string Description => "Counts the number of paragraphs in the text.";
+
+    public void Analyze(string text)
     {
-        public string Name => "Paragraph Counter";
+        _results.Clear();
 
-        public string Analyze(string text)
+        if (string.IsNullOrWhiteSpace(text))
         {
-            if (string.IsNullOrWhiteSpace(text))
-                return "Paragraphs: 0";
-
-            string[] paragraphs = text.Split(
-                new[] { "\r\n\r\n", "\n\n" },
-                StringSplitOptions.RemoveEmptyEntries);
-
-            return $"Paragraphs: {paragraphs.Length}";
+            _results.Add("Paragraph count: 0");
+            return;
         }
+
+        string[] paragraphs = text.Split(
+            new[] { "\r\n\r\n", "\n\n" },
+            StringSplitOptions.RemoveEmptyEntries);
+
+        _results.Add($"Paragraph count: {paragraphs.Length}");
+    }
+
+    public List<string> GetResults()
+    {
+        return _results;
     }
 }
