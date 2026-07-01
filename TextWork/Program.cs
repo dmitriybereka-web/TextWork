@@ -109,7 +109,34 @@ foreach (var plugin in analyzePlugins)
 Console.WriteLine("Editing text:");
 
 var textForEdit = """
-
+                       Document Processing Demo
+                  
+                  This is the first line.
+                  This is the second line.
+                  this is the second line.
+                  This is the third line.
+                  
+                  Apple
+                  Orange
+                  Banana
+                  Apple
+                  Cherry
+                  Banana
+                  
+                  The quick     brown      fox jumps over     the lazy dog.
+                  
+                  Programming is fun.
+                  Programming is fun.
+                  
+                  Replace the word "Programming" with "Coding".
+                  
+                  This line contains extra     spaces.
+                  
+                  C# is a modern programming language.
+                  Java is also a programming language.
+                  Python is popular for data science.
+                  
+                  End of the document.
                   """;
 
 var editorPlugins = new List<IEditorPlugin>
