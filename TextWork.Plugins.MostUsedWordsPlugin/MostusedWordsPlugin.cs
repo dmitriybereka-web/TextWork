@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using TextWork.Core;
 
-namespace MostUsedWordsPlugin;
+namespace TextWork.Plugins.MostUsedWords;
 
 public class MostUsedWordsPlugin : IAnalyzePlugin
 {

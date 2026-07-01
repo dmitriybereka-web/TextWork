@@ -84,9 +84,9 @@ var textForAnalysis = """
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
     new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
-    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin()
-    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin()
-    new MostUsedWordsPlugin.MostUsedWordsPlugin()
+    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
+    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
+    new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin()
  };
 
 foreach (var plugin in analyzePlugins)
