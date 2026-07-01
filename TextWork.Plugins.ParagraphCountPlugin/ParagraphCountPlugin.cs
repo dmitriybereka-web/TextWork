@@ -1,6 +1,6 @@
 ﻿using TextWork.Core;
 
-namespace ParagraphCountPlugin;
+namespace TextWork.Plugins.ParagraphCountPlugin;
 
 public class ParagraphCountPlugin : IAnalyzePlugin
 {

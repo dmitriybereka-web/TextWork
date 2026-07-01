@@ -79,7 +79,10 @@ var textForAnalysis = """
  
  var analyzePlugins = new List<IAnalyzePlugin>
  {
-    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin()
+    //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    new SymbolCountPlugin(),
+    new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
+    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin()
  };
 
 foreach (var plugin in analyzePlugins)

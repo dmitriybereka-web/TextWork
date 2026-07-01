@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Core", "TextWork.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParagraphCountPlugin", "ParagraphCountPlugin\ParagraphCountPlugin.csproj", "{F4EFC16B-52C8-4D79-8E39-E7B0040891CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ParagraphCountPlugin", "TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj", "{F4EFC16B-52C8-4D79-8E39-E7B0040891CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SymbolCount", "TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj", "{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}"
 	ProjectSection(ProjectDependencies) = postProject
