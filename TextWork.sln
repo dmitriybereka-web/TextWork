@@ -2,6 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36310.24
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork", "TextWork\TextWork.csproj", "{6E7DA4AC-4D67-4E19-A07C-A9D8D78B2924}"
 EndProject
@@ -9,10 +16,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Core", "TextWork.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SymbolCount", "TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj", "{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{211F587D-D982-4E36-87A3-3C8D83CF37F6} = {211F587D-D982-4E36-87A3-3C8D83CF37F6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LongestWord", "TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj", "{382E33B4-52C9-4280-952D-5B740AC87AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ShortestWord", "TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj", "{269A5B53-EA2A-4B37-80C4-C21B0E935481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UniqueWords", "TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj", "{A089CE61-818B-49FB-BB0F-B6A5CB53E329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.MostUsedWords", "TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj", "{B86E04A7-66EB-7F8B-6569-498835FAF3B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.WordCount", "TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj", "{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
+EndProject
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
@@ -29,12 +55,44 @@ Global
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		{F4EFC16B-52C8-4D79-8E39-E7B0040891CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EFC16B-52C8-4D79-8E39-E7B0040891CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE07289D-EDC0-4379-876C-F4E537ADB7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382E33B4-52C9-4280-952D-5B740AC87AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269A5B53-EA2A-4B37-80C4-C21B0E935481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269A5B53-EA2A-4B37-80C4-C21B0E935481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269A5B53-EA2A-4B37-80C4-C21B0E935481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269A5B53-EA2A-4B37-80C4-C21B0E935481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A089CE61-818B-49FB-BB0F-B6A5CB53E329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86E04A7-66EB-7F8B-6569-498835FAF3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86E04A7-66EB-7F8B-6569-498835FAF3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86E04A7-66EB-7F8B-6569-498835FAF3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86E04A7-66EB-7F8B-6569-498835FAF3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
