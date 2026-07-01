@@ -1,5 +1,6 @@
 ﻿using TextWork.Core;
 using TextWork.Plugins.SymbolCount;
+using TextWork.Plugins.ShortestWord;
 
 /*
  *
@@ -79,6 +80,11 @@ var textForAnalysis = """
  
  var analyzePlugins = new List<IAnalyzePlugin>
  {
+    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    new SymbolCountPlugin(),
+    new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
+    new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
+    new TextWork.Plugins.ShortestWord.ShortestWordPlugin()
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
     new SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
