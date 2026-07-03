@@ -12,7 +12,7 @@
  * Hryn Tetiana tana2501201010@gmail.com
  * Karelov Yevhenii krv.jeka@gmail.com
  * Perets Artem artem.perets.30@gmail.com
- * Zybin Nikita nikitos.zybin@gmail.com
+ * Zybin Nikita nikitos.zybin@gmail.com 
  * ..
  * ..
  */
