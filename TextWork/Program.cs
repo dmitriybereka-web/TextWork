@@ -87,9 +87,15 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
-    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
-    new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin()
+    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
+    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
+    new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
+    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
+    new TextWork.Plugins.SortLines.SortLinesPlugin(),
+    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin()
  };
+
+Console.WriteLine("Analyzing text:");
 
 var transformPlugins = new List<ITransformPlugin>
 {
@@ -110,5 +116,49 @@ foreach (var plugin in analyzePlugins)
     Console.WriteLine(new string('-', 50));
 }
 
+Console.WriteLine("Editing text:");
 
- 
+var textForEdit = """
+                       Document Processing Demo
+                  
+                  This is the first line.
+                  This is the second line.
+                  this is the second line.
+                  This is the third line.
+                  
+                  Apple
+                  Orange
+                  Banana
+                  Apple
+                  Cherry
+                  Banana
+                  
+                  The quick     brown      fox jumps over     the lazy dog.
+                  
+                  Programming is fun.
+                  Programming is fun.
+                  
+                  Replace the word "Programming" with "Coding".
+                  
+                  This line contains extra     spaces.
+                  
+                  C# is a modern programming language.
+                  Java is also a programming language.
+                  Python is popular for data science.
+                  
+                  End of the document.
+                  """;
+
+var editorPlugins = new List<IEditorPlugin>
+{
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter")
+};
+
+foreach (var plugin in editorPlugins)
+{
+    plugin.Edit(textForEdit);
+    Console.WriteLine($"Plugin: {plugin.Name}");
+    Console.WriteLine($"Description: {plugin.Description}");
+    Console.WriteLine($"Results:\n{plugin.GetResults()}");
+    Console.WriteLine(new string('-', 50));
+} 
