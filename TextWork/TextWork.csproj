@@ -29,6 +29,7 @@
     <ProjectReference Include="..\TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj" />
 	  <ProjectReference Include="..\TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj" />
 	  <ProjectReference Include="..\TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj" />
+	  <ProjectReference Include="..\TextWork.Plugins.WordReplace\TextWork.Plugins.WordReplace.csproj" />
   </ItemGroup>
 
 </Project>

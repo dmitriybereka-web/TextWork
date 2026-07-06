@@ -1,5 +1,8 @@
 ﻿using TextWork.Core;
+using TextWork.Plugins.NumberingParagraph;
+using TextWork.Plugins.WordReplace;
 
+//using TextWork.Plugins.TransformPlugins;
 
 /*
  *
@@ -95,6 +98,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.WordReplace.WordReplacePlugin("quick", "slow")
  };
 
 Console.WriteLine("Analyzing text:");
@@ -152,7 +156,7 @@ var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
-    new TextWork.Plugins.NumberingParagraph.NumberingParagraph()
+    new TextWork.Plugins.NumberingParagraph.NumberingParagraphPlugin()
 };
 
 foreach (var plugin in editorPlugins)

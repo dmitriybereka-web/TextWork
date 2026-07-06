@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.NumberingP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SearchUrls", "TextWork.Plugins.SearchUrls\TextWork.Plugins.SearchUrls.csproj", "{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.WordReplace", "TextWork.Plugins.WordReplace\TextWork.Plugins.WordReplace.csproj", "{D1C14E8F-C75D-4AC7-B46A-CED7C76D3646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -122,6 +124,10 @@ Global
 		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C14E8F-C75D-4AC7-B46A-CED7C76D3646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C14E8F-C75D-4AC7-B46A-CED7C76D3646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C14E8F-C75D-4AC7-B46A-CED7C76D3646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C14E8F-C75D-4AC7-B46A-CED7C76D3646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
