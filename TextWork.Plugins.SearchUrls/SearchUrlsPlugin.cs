@@ -7,7 +7,7 @@ namespace TextWork.Plugins.SearchUrls
 {
     public class SearchUrlsPlugin : ISearchPlugin
     {
-        public string Name => "URL Link Search";
+        public string Name => "URL Link Search HELLO WORLD";
         public string Description => "Finds and extracts all web links (URLs) starting with http:// or https:// from the text.";
 
         public List<string> Results { get; } = new List<string>();
