@@ -95,8 +95,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
-    new TextWork.Plugins.MailsFinder.MailsFinderPlugin()
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
@@ -220,7 +219,8 @@ var textForSearch = """
 var searchPlugins = new List<ISearchPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
-    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin()
+    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin(),
+    new TextWork.Plugins.MailsFinder.MailsFinderPlugin()
 };
 
 foreach (var plugin in searchPlugins)

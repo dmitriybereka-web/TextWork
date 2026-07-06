@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SearchUrls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.MailsFinder", "TextWork.Plugins.MailsFinder\TextWork.Plugins.MailsFinder.csproj", "{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.FindPalindroms", "TextWork.Plugins.FindPalindroms\TextWork.Plugins.FindPalindroms.csproj", "{839E365D-D325-40B9-B4CE-E3173FD28A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839E365D-D325-40B9-B4CE-E3173FD28A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839E365D-D325-40B9-B4CE-E3173FD28A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839E365D-D325-40B9-B4CE-E3173FD28A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839E365D-D325-40B9-B4CE-E3173FD28A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
