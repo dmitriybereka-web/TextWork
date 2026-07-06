@@ -1,4 +1,5 @@
 ﻿using TextWork.Core;
+using TextWork.Plugins.TransformPlugins;
 
 /*
  *
@@ -74,9 +75,9 @@ var textForAnalysis = """
                       
                       
                       """;
- 
- 
- var analyzePlugins = new List<IAnalyzePlugin>
+
+
+var analyzePlugins = new List<IAnalyzePlugin>
  {
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
     new TextWork.Plugins.SymbolCount.SymbolCountPlugin(),
@@ -89,6 +90,11 @@ var textForAnalysis = """
     new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin()
  };
+
+var transformPlugins = new List<ITransformPlugin>
+{
+    new LowerCasePlugin()
+};
 
 foreach (var plugin in analyzePlugins)
 {
