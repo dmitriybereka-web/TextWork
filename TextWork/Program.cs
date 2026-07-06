@@ -83,7 +83,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.SymbolCount.SymbolCountPlugin(),
     new TextWork.Plugins.AverageWordLength.AverageWordLengthPlugin(),
     new TextWork.Plugins.ShortestWord.ShortestWordPlugin(),
-    //new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
+    new TextWork.Plugins.ParagraphCountPlugin.ParagraphCountPlugin(),
     new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
@@ -93,8 +93,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
-    new TextWork.Plugins.TextReplacer.TextReplacerPlugin("quick", "slow"),
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
