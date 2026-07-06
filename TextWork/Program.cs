@@ -1,4 +1,8 @@
 ﻿using TextWork.Core;
+using TextWork.Plugins.NumberingParagraph;
+using TextWork.Plugins.WordReplace;
+using TextWork.Plugins.MailsFinder;
+
 using TextWork.Plugins.TransformPlugins;
 
 /*
@@ -93,6 +97,9 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.MailsFinder.MailsFinderPlugin(),
+    new TextWork.Plugins.WordReplace.WordReplacePlugin("quick", "slow")
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
@@ -152,6 +159,10 @@ var textForEdit = """
 
 var editorPlugins = new List<IEditorPlugin>
 {
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
+    new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin(),
+    new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
+    new TextWork.Plugins.NumberingParagraph.NumberingParagraphPlugin()
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter")
 };
 
@@ -163,3 +174,77 @@ foreach (var plugin in editorPlugins)
     Console.WriteLine($"Results:\n{plugin.GetResults()}");
     Console.WriteLine(new string('-', 50));
 } 
+
+
+var textForSearch = """
+                    Information Search Demo
+
+                    Project Manager: John Smith
+                    Email: john.smith@example.com
+
+                    Technical Support:
+                    support@test.org
+                    admin@company.net
+
+                    Phone numbers:
+                    +1-202-555-0175
+                    +44 20 7946 0958
+                    (555) 123-4567
+
+                    Useful websites:
+                    https://example.com
+                    https://docs.example.com
+                    http://test.org
+                    www.github.com
+
+                    Important dates:
+                    15 March 2025
+                    2026-09-30
+                    01/12/2024
+
+                    Project statistics:
+                    15 completed tasks
+                    8 active tasks
+                    120 users
+                    3.14 average score
+                    -25 temperature value
+
+                    The system is ready for testing.
+                    The system is ready for testing.
+
+                    Artificial Intelligence is transforming modern software development.
+
+                    Palindrome examples:
+                    level
+                    madam
+                    racecar
+                    rotator
+                    refer
+                    civic
+
+                    End of the document.
+                    """
+    ;
+
+var searchPlugins = new List<ISearchPlugin>
+{
+    new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
+    new TextWork.Plugins.PhoneSearch.PhoneSearchPlugin(),
+    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin(),
+    new TextWork.Plugins.SearchPlugins.NumberSearchPlugin()
+};
+
+foreach (var plugin in searchPlugins)
+{
+    plugin.Search(textForSearch);
+    Console.WriteLine($"Plugin: {plugin.Name}");
+    Console.WriteLine($"Description: {plugin.Description}");
+    Console.WriteLine("Results:");
+    var results = plugin.Results;
+    foreach (var result in results)
+    {
+        Console.WriteLine(result);
+    }
+
+    Console.WriteLine(new string('-', 50));
+}
