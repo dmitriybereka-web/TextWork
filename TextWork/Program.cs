@@ -90,8 +90,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
-    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
-    new TextWork.Plugins.SortLines.SortLinesPlugin()
+    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
@@ -151,7 +150,9 @@ var editorPlugins = new List<IEditorPlugin>
     new TextWork.Plugins.UpperCase.UpperCasePlugin(),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
+    new TextWork.Plugins.SortLines.SortLinesPlugin()
 };
 
 foreach (var plugin in editorPlugins)

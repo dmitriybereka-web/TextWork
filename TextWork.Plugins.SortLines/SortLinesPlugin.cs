@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using TextWork.Core;
 
 namespace TextWork.Plugins.SortLines
 {
-    public class SortLinesPlugin : IAnalyzePlugin
+    public class SortLinesPlugin : IEditorPlugin
     {
-        private readonly List<string> results = new List<string>();
+        private string result = "";
 
         public string Name => "Сортування рядків за абеткою";
 
-        public string Description => "Сортує всі рядки тексту за алфавітом.";
+        public string Description => "Сортує рядки тексту в алфавітному порядку.";
 
-        public void Analyze(string text)
+        public void Edit(string text)
         {
-            results.Clear();
-
             if (string.IsNullOrWhiteSpace(text))
             {
-                results.Add("Текст порожній.");
+                result = "Текст порожній.";
                 return;
             }
 
@@ -28,15 +25,12 @@ namespace TextWork.Plugins.SortLines
 
             Array.Sort(lines, StringComparer.OrdinalIgnoreCase);
 
-            foreach (string line in lines)
-            {
-                results.Add(line);
-            }
+            result = string.Join(Environment.NewLine, lines);
         }
 
-        public List<string> GetResults()
+        public string GetResults()
         {
-            return results;
+            return result;
         }
     }
 }
