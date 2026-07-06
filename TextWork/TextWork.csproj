@@ -11,6 +11,7 @@
     <ProjectReference Include="..\TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.CleanWhitespace\TextWork.Plugins.CleanWhitespace.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.LowerCase\TextWork.Plugins.LowerCase.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.MailsFinder\TextWork.Plugins.MailsFinder.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.NumberingParagraph\TextWork.Plugins.NumberingParagraph.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.NumberSearch\TextWork.Plugins.NumberSearch.csproj" />
@@ -20,6 +21,7 @@
     <ProjectReference Include="..\TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.RemoveDuplicateLines\TextWork.Plugins.RemoveDuplicateLines.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.SearchUrls\TextWork.Plugins.SearchUrls.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj" />
