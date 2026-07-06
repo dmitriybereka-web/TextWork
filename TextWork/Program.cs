@@ -220,7 +220,7 @@ var textForSearch = """
 var searchPlugins = new List<ISearchPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
-    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin()
+    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin(),
     new TextWork.Plugins.SearchPlugins.NumberSearchPlugin()
 };
 
