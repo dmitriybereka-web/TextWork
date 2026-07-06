@@ -3,6 +3,7 @@ using TextWork.Plugins.NumberingParagraph;
 using TextWork.Plugins.WordReplace;
 using TextWork.Plugins.MailsFinder;
 
+using TextWork.Plugins.TransformPlugins;
 
 /*
  *
@@ -16,7 +17,6 @@ using TextWork.Plugins.MailsFinder;
  * Hryn Tetiana tana2501201010@gmail.com
  * Karelov Yevhenii krv.jeka@gmail.com
  * Perets Artem artem.perets.30@gmail.com
- * Zybin Nikita nikitos.zybin@gmail.com 
  * ..
  * ..
  */
@@ -100,11 +100,15 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
     new TextWork.Plugins.MailsFinder.MailsFinderPlugin(),
     new TextWork.Plugins.WordReplace.WordReplacePlugin("quick", "slow")
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
 
-
+var transformPlugins = new List<ITransformPlugin>
+{
+    new LowerCasePlugin()
+};
 
 foreach (var plugin in analyzePlugins)
 {
@@ -159,6 +163,7 @@ var editorPlugins = new List<IEditorPlugin>
     new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin(),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
     new TextWork.Plugins.NumberingParagraph.NumberingParagraphPlugin()
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter")
 };
 
 foreach (var plugin in editorPlugins)
