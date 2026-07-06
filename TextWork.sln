@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.CleanWhite
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.RemoveDuplicateLines", "TextWork.Plugins.RemoveDuplicateLines\TextWork.Plugins.RemoveDuplicateLines.csproj", "{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ParagraphCountPlugin", "TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj", "{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,10 @@ Global
 		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
