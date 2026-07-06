@@ -1,5 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 VisualStudioVersion = 17.14.36310.24 d17.14
 VisualStudioVersion = 17.14.36811.4 d17.14
 # Visual Studio Version 18
@@ -9,35 +10,37 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork", "TextWork\TextWo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Core", "TextWork.Core\TextWork.Core.csproj", "{211F587D-D982-4E36-87A3-3C8D83CF37F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.TestPlugins", "TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj", "{AB9A6C4B-D443-4028-AA7D-67D5CE83F4D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SymbolCount", "TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj", "{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.SymbolCount", "TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj", "{72B1CE2F-F215-4AC4-8C7E-ACA0812DC3F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.AverageWordLength", "TextWork.Plugins.AverageWordLength\TextWork.Plugins.AverageWordLength.csproj", "{DE07289D-EDC0-4379-876C-F4E537ADB7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LongestWord", "TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj", "{382E33B4-52C9-4280-952D-5B740AC87AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.LongestWord", "TextWork.Plugins.LongestWord\TextWork.Plugins.LongestWord.csproj", "{382E33B4-52C9-4280-952D-5B740AC87AC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ShortestWord", "TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj", "{269A5B53-EA2A-4B37-80C4-C21B0E935481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.ShortestWord", "TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj", "{269A5B53-EA2A-4B37-80C4-C21B0E935481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UniqueWords", "TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj", "{A089CE61-818B-49FB-BB0F-B6A5CB53E329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.UniqueWords", "TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj", "{A089CE61-818B-49FB-BB0F-B6A5CB53E329}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.MostUsedWords", "TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj", "{B86E04A7-66EB-7F8B-6569-498835FAF3B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.MostUsedWords", "TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj", "{B86E04A7-66EB-7F8B-6569-498835FAF3B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.WordCount", "TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj", "{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.WordCount", "TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj", "{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LowerCase", "TextWork.Plugins.LowerCase\TextWork.Plugins.LowerCase.csproj", "{ED23F477-9B7D-4480-9E7E-996FE02275A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.LowerCase", "TextWork.Plugins.LowerCase\TextWork.Plugins.LowerCase.csproj", "{ED23F477-9B7D-4480-9E7E-996FE02275A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SortLines", "TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj", "{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.SortLines", "TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj", "{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UpperCase", "TextWork.Plugins.UpperCase\TextWork.Plugins.UpperCase.csproj", "{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.UpperCase", "TextWork.Plugins.UpperCase\TextWork.Plugins.UpperCase.csproj", "{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.CleanWhitespace", "TextWork.Plugins.CleanWhitespace\TextWork.Plugins.CleanWhitespace.csproj", "{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.CleanWhitespace", "TextWork.Plugins.CleanWhitespace\TextWork.Plugins.CleanWhitespace.csproj", "{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.RemoveDuplicateLines", "TextWork.Plugins.RemoveDuplicateLines\TextWork.Plugins.RemoveDuplicateLines.csproj", "{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork.Plugins.RemoveDuplicateLines", "TextWork.Plugins.RemoveDuplicateLines\TextWork.Plugins.RemoveDuplicateLines.csproj", "{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ParagraphCountPlugin", "TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj", "{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.RemoveEmptyLines", "TextWork.Plugins.RemoveEmptyLines\TextWork.Plugins.RemoveEmptyLines.csproj", "{F62ED9BA-99D8-41F6-8BCA-B89EEE20C1DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.NumberingParagraph", "TextWork.Plugins.NumberingParagraph\TextWork.Plugins.NumberingParagraph.csproj", "{304DD770-3918-4882-9F8E-4E250A369C47}"
 EndProject
@@ -125,6 +128,10 @@ Global
 		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62ED9BA-99D8-41F6-8BCA-B89EEE20C1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62ED9BA-99D8-41F6-8BCA-B89EEE20C1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62ED9BA-99D8-41F6-8BCA-B89EEE20C1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62ED9BA-99D8-41F6-8BCA-B89EEE20C1DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Release|Any CPU.ActiveCfg = Release|Any CPU

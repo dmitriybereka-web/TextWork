@@ -156,6 +156,9 @@ var textForEdit = """
 var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin()
+
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
     new TextWork.Plugins.NumberingParagraph.NumberingParagraph()
 };
