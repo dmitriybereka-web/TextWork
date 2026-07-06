@@ -1,5 +1,5 @@
 ﻿using TextWork.Core;
-using TextWork.Plugins.TransformPlugins;
+
 
 /*
  *
@@ -98,10 +98,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
 
 Console.WriteLine("Analyzing text:");
 
-var transformPlugins = new List<ITransformPlugin>
-{
-    new LowerCasePlugin()
-};
+
 
 foreach (var plugin in analyzePlugins)
 {
@@ -152,7 +149,9 @@ var textForEdit = """
 
 var editorPlugins = new List<IEditorPlugin>
 {
-    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter")
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
+    new TextWork.Plugins.EditorPlugins.LowerCasePlugin()
+
 };
 
 foreach (var plugin in editorPlugins)
