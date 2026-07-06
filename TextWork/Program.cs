@@ -94,7 +94,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
  };
 
 Console.WriteLine("Analyzing text:");
@@ -151,8 +151,8 @@ var textForEdit = """
 var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
-    new TextWork.Plugins.EditorPlugins.LowerCasePlugin()
-
+    new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
+    new TextWork.Plugins.NumberingParagraph.NumberingParagraph()
 };
 
 foreach (var plugin in editorPlugins)
