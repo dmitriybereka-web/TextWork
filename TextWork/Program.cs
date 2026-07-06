@@ -148,10 +148,9 @@ var textForEdit = """
 var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
-    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
-    new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
-    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin()
+
 };
 
 foreach (var plugin in editorPlugins)
