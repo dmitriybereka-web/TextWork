@@ -1,4 +1,5 @@
 ﻿using TextWork.Core;
+using TextWork.Plugins.MailsFinder;
 
 
 /*
@@ -95,6 +96,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.MailsFinder.MailsFinderPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
