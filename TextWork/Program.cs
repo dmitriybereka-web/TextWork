@@ -88,7 +88,6 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
-    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
@@ -150,6 +149,8 @@ var textForEdit = """
 
 var editorPlugins = new List<IEditorPlugin>
 {
+    new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
+    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin()
 
