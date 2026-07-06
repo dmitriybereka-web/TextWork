@@ -90,7 +90,8 @@ var textForAnalysis = """
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
-    new TextWork.Plugins.SortLines.SortLinesPlugin()
+    new TextWork.Plugins.SortLines.SortLinesPlugin(),
+    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin()
  };
 
 Console.WriteLine("Analyzing text:");
