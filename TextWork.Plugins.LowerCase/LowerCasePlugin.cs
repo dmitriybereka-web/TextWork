@@ -1,18 +1,22 @@
 ﻿using TextWork.Core;
 
-namespace TextWork.Plugins.TransformPlugins;
+namespace TextWork.Plugins.EditorPlugins;
 
-public class LowerCasePlugin : ITransformPlugin
+public class LowerCasePlugin : IEditorPlugin
 {
+    private string result = string.Empty;
+
     public string Name => "Lower Case";
 
     public string Description => "Converts all text to lowercase.";
 
-    public string Transform(string text)
+    public void Edit(string text)
     {
-        if (string.IsNullOrWhiteSpace(text))
-            return text;
+        result = text.ToLower();
+    }
 
-        return text.ToLower();
+    public string GetResults()
+    {
+        return result;
     }
 }
