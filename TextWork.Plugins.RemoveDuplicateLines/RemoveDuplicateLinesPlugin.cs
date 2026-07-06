@@ -5,20 +5,18 @@ using TextWork.Core;
 
 namespace TextWork.Plugins.RemoveDuplicateLines
 {
-    public class RemoveDuplicateLinesPlugin : IAnalyzePlugin
+    public class RemoveDuplicateLinesPlugin : IEditorPlugin
     {
         public string Name => "Duplicate Line Remover";
         public string Description => "Removes duplicate lines from the text, keeping only the first occurrence.";
 
-        private readonly List<string> _results = new List<string>();
+        private string _resultText = string.Empty;
 
-        public void Analyze(string text)
+        public void Edit(string text)
         {
-            _results.Clear();
-
             if (string.IsNullOrWhiteSpace(text))
             {
-                _results.Add("Cleaned text: (Text is empty)");
+                _resultText = "Text with duplicates removed: (Text is empty)";
                 return;
             }
 
@@ -27,22 +25,15 @@ namespace TextWork.Plugins.RemoveDuplicateLines
             var uniqueLines = lines
                 .Select(line => line.Trim())
                 .Distinct(StringComparer.OrdinalIgnoreCase)
+                .Where(line => !string.IsNullOrWhiteSpace(line))
                 .ToArray();
 
-            _results.Add("Text with duplicates removed:");
-
-            foreach (var line in uniqueLines)
-            {
-                if (!string.IsNullOrWhiteSpace(line))
-                {
-                    _results.Add(line);
-                }
-            }
+            _resultText = string.Join(Environment.NewLine, uniqueLines);
         }
 
-        public List<string> GetResults()
+        public string GetResults()
         {
-            return _results;
+            return _resultText;
         }
     }
 }

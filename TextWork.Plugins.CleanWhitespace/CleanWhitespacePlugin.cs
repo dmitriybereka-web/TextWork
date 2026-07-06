@@ -5,34 +5,28 @@ using TextWork.Core;
 
 namespace TextWork.Plugins.CleanWhitespace
 {
-    public class CleanWhitespacePlugin : IAnalyzePlugin
+    public class CleanWhitespacePlugin : IEditorPlugin
     {
         public string Name => "Excess Whitespace Remover";
         public string Description => "Removes multiple consecutive spaces and trims leading/trailing whitespaces from the text.";
 
-        private readonly List<string> _results = new List<string>();
+        private string _resultText = string.Empty;
 
-        public void Analyze(string text)
+        public void Edit(string text)
         {
-            _results.Clear();
-
             if (string.IsNullOrWhiteSpace(text))
             {
-                _results.Add("Cleaned text: (Text is empty)");
+                _resultText = "Cleaned text: (Text is empty)";
                 return;
             }
 
             string[] words = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            string cleanedText = string.Join(" ", words);
-
-            _results.Add("Cleaned Text Result:");
-            _results.Add(cleanedText);
+            _resultText = string.Join(" ", words);
         }
 
-        public List<string> GetResults()
+        public string GetResults()
         {
-            return _results;
+            return _resultText;
         }
     }
 }
