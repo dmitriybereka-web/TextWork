@@ -1,8 +1,8 @@
 ﻿using TextWork.Core;
 using TextWork.Plugins.NumberingParagraph;
 using TextWork.Plugins.WordReplace;
+using TextWork.Plugins.MailsFinder;
 
-//using TextWork.Plugins.TransformPlugins;
 
 /*
  *
@@ -98,6 +98,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
+    new TextWork.Plugins.MailsFinder.MailsFinderPlugin()
     new TextWork.Plugins.WordReplace.WordReplacePlugin("quick", "slow")
  };
 
@@ -156,7 +157,7 @@ var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
-    new TextWork.Plugins.NumberingParagraph.NumberingParagraphPlugin()
+    new TextWork.Plugins.NumberingParagraph.NumberingParagraph()
 };
 
 foreach (var plugin in editorPlugins)
@@ -222,7 +223,8 @@ var textForSearch = """
 var searchPlugins = new List<ISearchPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
-    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin()
+    new TextWork.Plugins.SearchUrls.SearchUrlsPlugin(),
+    new TextWork.Plugins.SearchPlugins.NumberSearchPlugin()
 };
 
 foreach (var plugin in searchPlugins)
