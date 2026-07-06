@@ -87,7 +87,8 @@ var textForAnalysis = """
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
-    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin()
+    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
+    new TextWork.Plugins.SortLines.SortLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");

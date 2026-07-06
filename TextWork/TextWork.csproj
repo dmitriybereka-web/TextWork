@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj" />
     <ProjectReference Include="..\TextWork.Core\TextWork.Core.csproj" />
@@ -17,8 +18,9 @@
     <ProjectReference Include="..\TextWork.Plugins.ShortestWord\TextWork.Plugins.ShortestWord.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.TestPlugins\TextWork.Plugins.TestPlugins.csproj" />
-    <ProjectReference Include="..\TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.UniqueWords\TextWork.Plugins.UniqueWords.csproj" />
+	  <ProjectReference Include="..\TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj" />
+	  <ProjectReference Include="..\TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj" />
   </ItemGroup>
 
 </Project>
