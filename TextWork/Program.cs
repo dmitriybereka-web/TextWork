@@ -98,7 +98,7 @@ var analyzePlugins = new List<IAnalyzePlugin>
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
     new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
     new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
-    new TextWork.Plugins.MailsFinder.MailsFinderPlugin()
+    new TextWork.Plugins.MailsFinder.MailsFinderPlugin(),
     new TextWork.Plugins.WordReplace.WordReplacePlugin("quick", "slow")
  };
 
@@ -156,11 +156,9 @@ var textForEdit = """
 var editorPlugins = new List<IEditorPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestEditPlugin(testParameter: "Test parameter"),
-    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin(),
-    new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin()
-
+    new TextWork.Plugins.RemoveEmptyLines.RemoveEmptyLinesPlugin(),
     new TextWork.Plugins.EditorPlugins.LowerCasePlugin(),
-    new TextWork.Plugins.NumberingParagraph.NumberingParagraph()
+    new TextWork.Plugins.NumberingParagraph.NumberingParagraphPlugin()
 };
 
 foreach (var plugin in editorPlugins)
@@ -226,7 +224,7 @@ var textForSearch = """
 var searchPlugins = new List<ISearchPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
-    new TextWork.Plugins.PhoneSearch.PhoneSearchPlugin()
+    new TextWork.Plugins.PhoneSearch.PhoneSearchPlugin(),
     new TextWork.Plugins.SearchUrls.SearchUrlsPlugin(),
     new TextWork.Plugins.SearchPlugins.NumberSearchPlugin()
 };
