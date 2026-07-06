@@ -1,4 +1,5 @@
 ﻿using TextWork.Core;
+using TextWork.Plugins.TransformPlugins;
 
 /*
  *
@@ -75,9 +76,9 @@ var textForAnalysis = """
                       
                       
                       """;
- 
- 
- var analyzePlugins = new List<IAnalyzePlugin>
+
+
+var analyzePlugins = new List<IAnalyzePlugin>
  {
     //new TextWork.Plugins.TestPlugins.TestAnalyzePlugin(),
     new TextWork.Plugins.SymbolCount.SymbolCountPlugin(),
@@ -87,11 +88,21 @@ var textForAnalysis = """
     new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
+    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
+    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
-    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin()
+    new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
+    new TextWork.Plugins.SortLines.SortLinesPlugin(),
+    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");
+
+var transformPlugins = new List<ITransformPlugin>
+{
+    new LowerCasePlugin()
+};
 
 foreach (var plugin in analyzePlugins)
 {

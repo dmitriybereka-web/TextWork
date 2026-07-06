@@ -1,7 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36811.4
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork", "TextWork\TextWork.csproj", "{6E7DA4AC-4D67-4E19-A07C-A9D8D78B2924}"
 EndProject
@@ -23,7 +24,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.MostUsedWo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.WordCount", "TextWork.Plugins.WordCount\TextWork.Plugins.WordCount.csproj", "{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LowerCase", "TextWork.Plugins.LowerCase\TextWork.Plugins.LowerCase.csproj", "{ED23F477-9B7D-4480-9E7E-996FE02275A9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SortLines", "TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj", "{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UpperCase", "TextWork.Plugins.UpperCase\TextWork.Plugins.UpperCase.csproj", "{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.CleanWhitespace", "TextWork.Plugins.CleanWhitespace\TextWork.Plugins.CleanWhitespace.csproj", "{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.RemoveDuplicateLines", "TextWork.Plugins.RemoveDuplicateLines\TextWork.Plugins.RemoveDuplicateLines.csproj", "{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +82,30 @@ Global
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED23F477-9B7D-4480-9E7E-996FE02275A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED23F477-9B7D-4480-9E7E-996FE02275A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED23F477-9B7D-4480-9E7E-996FE02275A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED23F477-9B7D-4480-9E7E-996FE02275A9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FEC6A8-5E78-400F-AA82-46A2B4F4007B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F66014C-9D1A-48B9-B077-CFFB1E02D4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
