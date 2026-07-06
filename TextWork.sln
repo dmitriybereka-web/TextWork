@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36811.4
 # Visual Studio Version 18
-VisualStudioVersion = 18.5.11716.220 stable
+VisualStudioVersion = 18.5.11716.220
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork", "TextWork\TextWork.csproj", "{6E7DA4AC-4D67-4E19-A07C-A9D8D78B2924}"
 EndProject
@@ -39,6 +37,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.ParagraphCountPlugin", "TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj", "{2EC9A339-66E7-4C7B-A721-EDACBCB7DDD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.NumberingParagraph", "TextWork.Plugins.NumberingParagraph\TextWork.Plugins.NumberingParagraph.csproj", "{304DD770-3918-4882-9F8E-4E250A369C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SearchUrls", "TextWork.Plugins.SearchUrls\TextWork.Plugins.SearchUrls.csproj", "{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.MailsFinder", "TextWork.Plugins.MailsFinder\TextWork.Plugins.MailsFinder.csproj", "{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}"
 EndProject
@@ -120,6 +120,10 @@ Global
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304DD770-3918-4882-9F8E-4E250A369C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E211B1-35D9-4A9E-9546-790A0F2BC8E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCDA9BBD-72CF-41A7-94B9-762B17048AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
