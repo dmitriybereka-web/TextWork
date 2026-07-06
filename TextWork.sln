@@ -1,5 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
 VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextWork", "TextWork\TextWork.csproj", "{6E7DA4AC-4D67-4E19-A07C-A9D8D78B2924}"
@@ -25,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.LineCounterPlugin", "TextWork.Plugins.LineCounterPlugin\TextWork.Plugins.LineCounterPlugin.csproj", "{87929F7F-2C99-4003-9D43-0D74A4BD3D74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.SortLines", "TextWork.Plugins.SortLines\TextWork.Plugins.SortLines.csproj", "{DF3E7F31-8D8D-4185-ABDB-48B8A6652562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWork.Plugins.UpperCase", "TextWork.Plugins.UpperCase\TextWork.Plugins.UpperCase.csproj", "{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +75,10 @@ Global
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8F3760-9FCC-4AEE-B97D-ECBD234E4A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E596B2C-C410-4DDB-BFFA-B69E984E20D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87929F7F-2C99-4003-9D43-0D74A4BD3D74}.Release|Any CPU.ActiveCfg = Release|Any CPU

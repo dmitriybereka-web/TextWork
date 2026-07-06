@@ -86,6 +86,8 @@ var textForAnalysis = """
     new TextWork.Plugins.WordCount.WordCountPlugin(),
     new TextWork.Plugins.LongestWord.LongestWordPlugin(),
     new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
+    new TextWork.Plugins.UpperCase.UpperCasePlugin(),
+    new TextWork.Plugins.UniqueWords.UniqueWordsPlugin(),
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin()
