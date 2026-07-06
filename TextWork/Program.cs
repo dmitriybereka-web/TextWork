@@ -91,7 +91,8 @@ var textForAnalysis = """
     new TextWork.Plugins.MostUsedWords.MostUsedWordsPlugin(),
     new TextWork.Plugins.LineCounterPlugin.LineCounterPlugin(),
     new TextWork.Plugins.SortLines.SortLinesPlugin(),
-    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin()
+    new TextWork.Plugins.CleanWhitespace.CleanWhitespacePlugin(),
+    new TextWork.Plugins.RemoveDuplicateLines.RemoveDuplicateLinesPlugin()
  };
 
 Console.WriteLine("Analyzing text:");

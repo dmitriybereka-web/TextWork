@@ -22,10 +22,8 @@ namespace TextWork.Plugins.CleanWhitespace
                 return;
             }
 
-            // Split the text by spaces, automatically removing all duplicate empty spaces
             string[] words = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            // Re-join the words using a single clean space
             string cleanedText = string.Join(" ", words);
 
             _results.Add("Cleaned Text Result:");
