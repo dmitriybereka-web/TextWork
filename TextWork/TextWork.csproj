@@ -13,6 +13,7 @@
     <ProjectReference Include="..\TextWork.Plugins.LowerCase\TextWork.Plugins.LowerCase.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.MostUsedWordsPlugin\TextWork.Plugins.MostUsedWords.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.NumberingParagraph\TextWork.Plugins.NumberingParagraph.csproj" />
+    <ProjectReference Include="..\TextWork.Plugins.NumberSearch\TextWork.Plugins.NumberSearch.csproj" />
     <ProjectReference Include="..\TextWork.Plugins.ParagraphCountPlugin\TextWork.Plugins.ParagraphCountPlugin.csproj" />
     <ProjectReference Include="..\TextWork.Core\TextWork.Core.csproj" />
     <ProjectReference Include="..\TextWork.Plugin.SymbolCount\TextWork.Plugins.SymbolCount.csproj" />

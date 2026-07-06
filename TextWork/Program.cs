@@ -218,6 +218,7 @@ var textForSearch = """
 var searchPlugins = new List<ISearchPlugin>
 {
     new TextWork.Plugins.TestPlugins.TestSearchPlugin(searchWord: "Artificial"),
+    new TextWork.Plugins.SearchPlugins.NumberSearchPlugin()
 };
 
 foreach (var plugin in searchPlugins)
