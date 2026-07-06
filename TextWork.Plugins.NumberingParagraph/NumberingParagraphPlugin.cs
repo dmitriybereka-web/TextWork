@@ -1,7 +1,7 @@
 ﻿namespace TextWork.Plugins.NumberingParagraph;
 using TextWork.Core;
 
-public class NumberingParagraph : IEditorPlugin
+public class NumberingParagraphPlugin : IEditorPlugin
 {
     public string Name => "Numbering Paragraph";
     public string Description => "Numbering Paragraphs by order";
@@ -19,7 +19,7 @@ public class NumberingParagraph : IEditorPlugin
         Result = string.Join(Environment.NewLine, lines);
     }
 
-    public string? GetResults()
+    public string GetResults()
     {
         if (Result != null)
             return Result;
